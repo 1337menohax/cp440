@@ -16,12 +16,12 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                openActivity2();
+                openBattle();
             }
         });
     }
-    public void openActivity2(){
-        Intent intent = new Intent(this, Activity2.class);
+    public void openBattle(){
+        Intent intent = new Intent(this, battleScreen.class);
         startActivity(intent);
     }
 }
